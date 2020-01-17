@@ -77,12 +77,13 @@ img{
 
 #boton-buscar{
     margin: 2%;
-    width: 10%;
+    width:30px;
     background: dodgerblue;
     padding: 10px;
     border-radius: 6px;
     text-decoration: none;
     border: 0px solid #0016b0;
+    overflow-wrap : break-word;
 }
 
 
@@ -93,13 +94,14 @@ img{
 
 #id-pokemon{
     width: 10%;
-    padding: 12px 20px;
+    /*padding: 12px 20px;*/
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
 }
+<<<<<<< HEAD
 
     #habilidades{
         width: 100%;
@@ -113,3 +115,5 @@ img{
     .caja-2{
         display: block;
     }
+=======
+>>>>>>> f4cf56d5b3b864adaf63e17711b1e3dd3d399c6c
