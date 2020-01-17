@@ -26,6 +26,7 @@ body{
 }
 
 
+
 .container > div ,
 .container .caja-1,
 .container .caja-2,
@@ -99,3 +100,16 @@ img{
     border-radius: 4px;
     box-sizing: border-box;
 }
+
+    #habilidades{
+        width: 100%;
+        height: 20px;
+        text-align: center;
+        font-size: 25pt;
+    
+    }
+
+
+    .caja-2{
+        display: block;
+    }

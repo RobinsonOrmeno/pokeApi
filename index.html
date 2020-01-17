@@ -11,32 +11,42 @@
 <body>
     <div class="container">
         <div class="caja-1">
-            <h1>Titulo</h1>
+            <h1>Pokemons</h1>
         </div>
         <div class="caja-2">
+         
             <button id="boton-buscar" onclick="buscar()"> Buscar </button>
             <input id="id-pokemon" type="text"/>
+            <div id="habilidades"> <p id="nombre-pokemon"></p></div>
             <div id="pokemon-img"></div>
+      
+
         </div>
         <div class="caja-3">
-            <h3>Caja 3 </h3>
+            <h3>Robinson Orme&ntilde;o</h3>
         </div>
     </div>
 </body>
 
 
 <script>
-    let pokemon = ''
-   
+    let pokemonImg = ''
+    let pokemonNombre = ''
     let imagen = document.getElementById('pokemon-img')
+    let nombre = document.getElementById('nombre-pokemon')
     const buscar = ()=>{
         let idPokemon = document.getElementById('id-pokemon').value
         let res = getPokemonAsync(idPokemon).then(function(resolve){
-            pokemon = resolve.sprites.back_default;
-            console.log(pokemon)
+            console.log(resolve)
+
+            pokemonImg = resolve.sprites.front_default;
+            pokemonNombre = resolve.forms[0].name;
+    
+         
 
     }).then(function(){
-        imagen.innerHTML = ` <img src="${pokemon}" alt=""/>`;
+        imagen.innerHTML = ` <img src="${pokemonImg}" alt=""/>`;
+        nombre.innerHTML = `${pokemonNombre}`;
     })
 
 
